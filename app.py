@@ -21,7 +21,7 @@ st.caption("Click on the icons on the pitch to play the corresponding video anal
 # ==========================
 matches_data = {
     "Vs Los Angeles": [
-        ("FOULED", 90.42, 2.93, None),
+        ("FOULED", 90.42, 2.93, "videos/D13 - LA.mp4"),
         ("DUEL OFENSIVO WON", 107.38, 14.40, "videos/D1 - LA.mp4"),
         ("DUEL OFENSIVO WON", 112.86, 19.55, "videos/D2 - LA.mp4"),
         ("DUEL OFENSIVO WON", 100.23, 45.82, "videos/D3 - LA.mp4"),
