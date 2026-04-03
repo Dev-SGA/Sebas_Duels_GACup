@@ -62,12 +62,12 @@ def build_df(carries: list) -> pd.DataFrame:
         dist = calculate_distance(x_start, y_start, x_end, y_end)
         rows.append(
             {
-                "numero": i + 1,
+                "number": i + 1,
                 "x_start": float(x_start),
                 "y_start": float(y_start),
                 "x_end": float(x_end),
                 "y_end": float(y_end),
-                "distancia": dist,
+                "distance": dist,
                 "video": video,
             }
         )
@@ -79,8 +79,8 @@ def build_df(carries: list) -> pd.DataFrame:
     else:
         df = pd.DataFrame(
             columns=[
-                "numero", "x_start", "y_start", "x_end", "y_end",
-                "distancia", "video", "in_final_third", "to_box",
+                "number", "x_start", "y_start", "x_end", "y_end",
+                "distance", "video", "in_final_third", "to_box",
             ]
         )
 
@@ -89,7 +89,7 @@ def build_df(carries: list) -> pd.DataFrame:
 
 def compute_stats(df: pd.DataFrame) -> dict:
     total_carries = len(df)
-    total_distance = round(df["distancia"].sum(), 1) if not df.empty else 0.0
+    total_distance = round(df["distance"].sum(), 1) if not df.empty else 0.0
     final_third_total = int(df["in_final_third"].sum()) if not df.empty else 0
     box_total = int(df["to_box"].sum()) if not df.empty else 0
 
@@ -287,12 +287,12 @@ with col_map:
         st.info("Click on a carry's start dot to view the video (if available).")
     else:
         st.success(
-            f"Selected carry #{int(selected_carry['numero'])}"
+            f"Selected carry #{int(selected_carry['number'])}"
         )
         st.write(
             f"Start: ({selected_carry['x_start']:.2f}, {selected_carry['y_start']:.2f})  \n"
             f"End: ({selected_carry['x_end']:.2f}, {selected_carry['y_end']:.2f})  \n"
-            f"Distance: {selected_carry['distancia']:.1f} m"
+            f"Distance: {selected_carry['distance']:.1f} m"
         )
 
         if has_video_value(selected_carry["video"]):
