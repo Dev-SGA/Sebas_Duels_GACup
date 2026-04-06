@@ -37,11 +37,11 @@ matches_data = {
     ],
     "vs Slavia Praha": [
         ("DUEL OFENSIVO WON", 93.25, 8.91, "videos/D6 - SP.mp4"),
-        ("DUEL OFENSIVO WON", 59.17, 19.55, "videos/D5 - SP.mp4"),
+        ("DUEL OFENSIVO WON", 59.17, 19.55, "videos/D7 - SP.mp4"),
         ("DUEL OFENSIVO LOST", 118.68, 22.55, "videos/D2 - SP.mp4"),
         ("DUEL OFENSIVO LOST", 116.52, 25.54, "videos/D3 - SP.mp4"),
         ("DUEL OFENSIVO LOST", 115.52, 64.60, "videos/D1 - SP.mp4"),
-        ("DUEL OFENSIVO LOST", 39.72, 72.42, "videos/D6 - SP.mp4"),
+        ("DUEL OFENSIVO LOST", 39.72, 72.42, "videos/D5 - SP.mp4"),
     ],
     "vs Sockers": [
         ("DUEL OFENSIVO WON", 68.31, 72.58, "videos/D6 - SK.mp4"), 
